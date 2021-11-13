@@ -17,9 +17,9 @@ export default function Intro4() {
                         <Text style={styles.button}>Sign in with mobile number</Text>
                     </TouchableOpacity>
                 </View>
-                <Text style={{ color: "gray",fontSize:18, marginBottom: 20,justifyContent:"center",alignItems:"center", marginTop:20 }}>or</Text>
+                <Text style={{ color: "gray", fontSize: 18, marginBottom: 20, justifyContent: "center", alignItems: "center", marginTop: 20 }}>or</Text>
                 <View style={styles.fbbutn}>
-                    <Image source={fblogo} style={{marginRight: 10,}} />
+                    <Image source={fblogo} style={{ marginRight: 10, }} />
                     <TouchableOpacity  >
                         <Text style={styles.button}>Sign in with Facebook</Text>
                     </TouchableOpacity>
@@ -27,7 +27,9 @@ export default function Intro4() {
 
             </View>
             <View style={styles.footer}>
-                <Text>By signing in, you accept our<Text style={{color: "blue"}}> Terms and Conditions</Text> </Text>
+                <Text>By signing in, you accept our
+                        <Text style={{ color: "blue" }}> Terms and Conditions</Text>             
+                </Text>
             </View>
         </View>
     )
@@ -59,7 +61,7 @@ const styles = StyleSheet.create({
     },
     butn: {
         backgroundColor: "#2A2AC0",
-        width: 350,
+        width: 340,
         height: 60,
         marginTop: 60,
         justifyContent: "center",
@@ -75,18 +77,18 @@ const styles = StyleSheet.create({
     },
     midder: {
         flex: 0.4,
-        justifyContent:"center",
+        justifyContent: "center",
         alignItems: "center",
     },
     footer: {
         flex: 0.1,
-        justifyContent:"center",
+        justifyContent: "center",
         alignItems: "flex-end",
         marginTop: 40
     },
-    fbbutn:{
+    fbbutn: {
         backgroundColor: "#415C95",
-        width: 350,
+        width: 340,
         height: 60,
         flexDirection: "row",
         justifyContent: "center",

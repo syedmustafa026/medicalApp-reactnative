@@ -2,12 +2,9 @@
 import React from "react"
 import { Button, TouchableOpacity, StyleSheet } from "react-native"
 
-export default function Butn(title) {
+export default function Row(title,date) {
   return (
-    <TouchableOpacity>
-      <Button style={styles.butn} title={"title"}/>
-    </TouchableOpacity>
-
+    <View></View>
   )
 }
 const styles = StyleSheet.create({
