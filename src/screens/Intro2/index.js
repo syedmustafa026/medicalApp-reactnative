@@ -1,0 +1,80 @@
+import React from 'react';
+import { Image, StyleSheet, Text, View,TouchableOpacity } from 'react-native';
+import Logo from "../../../assets/Logo1.png"
+import Doc from "../../../assets/doc2.png"
+import dot from "../../../assets/dot2.png"
+
+export default function Intro2() {
+    return (
+        <View style={styles.container}>
+            <View style={styles.header}>
+                <Image source={Logo} style={styles.logo} />
+                <Text style={styles.text}>Storage your Medical Records</Text>
+                <Image source={Doc} style={styles.doc} />
+            </View>
+
+            <View style={styles.footer}>
+                <TouchableOpacity>
+                    <Text style={styles.btn}>Skip</Text>
+                </TouchableOpacity>
+                <Image source={dot} style={styles.dot} />
+                <TouchableOpacity>
+                    <Text style={styles.btn}>Next</Text>
+                </TouchableOpacity>
+            </View>
+        </View>
+        
+    );
+}
+
+const styles = StyleSheet.create({
+    header:{
+        flex: 0.9,
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    container: {
+        flex: 1,
+        backgroundColor: '#ECF1FA',
+    },
+    logo: {
+        width: 100,
+        height: 85,
+        alignItems: "center",
+        marginTop: "20%",
+        justifyContent: "center",
+        marginHorizontal: "auto",
+    },
+    doc: {
+        width: 199,
+        height: 183,
+        marginTop: 50,
+        marginHorizontal: "auto",
+    },
+    text: {
+        width:200,
+        fontSize: 25,
+        textAlign:"center",
+        fontWeight: "700",
+        color: '#181461',
+        marginTop: 40,
+        marginHorizontal: "auto",
+
+    },
+    btn: {
+        fontWeight: "700",
+        color: '#2A2AC0',
+    },
+    dot: {
+        width: 40,
+        height: 10,
+
+    },
+    footer: {
+        flex: 0.1,
+        marginTop: "20%",
+        flexDirection: "row",
+        justifyContent: "space-around",
+        alignItems: "center",
+    },
+});
