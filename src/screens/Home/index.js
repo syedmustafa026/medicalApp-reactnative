@@ -10,7 +10,7 @@ export default function Home() {
                 colors={['rgba(42,42,192,0.8)', 'transparent']}
                 style={styles.background}
             />
-            <Image source={Logo} style={{ width: 100, height: 85 }} />
+            <Image source={Logo} style={{ width: 110, height: 90 }} />
             <View style={{flexDirection:"row", justifyContent:"space-evenly"}}>
 
             <Text style={styles.text}>Medical</Text>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
 import Logo from "../../../assets/Logo1.png"
-
+import fblogo from "../../../assets/images/fblogo.png"
 
 export default function Intro4() {
     return (
@@ -12,19 +12,29 @@ export default function Intro4() {
                 <Text style={styles.sub}>Sign in to continue</Text>
             </View>
             <View style={styles.midder}>
-            <View style={styles.butn}>
-                <TouchableOpacity>
-                    <Text style={styles.button}>Sign in with mobile number</Text>
-                </TouchableOpacity>
+                <View style={styles.butn}>
+                    <TouchableOpacity  >
+                        <Text style={styles.button}>Sign in with mobile number</Text>
+                    </TouchableOpacity>
+                </View>
+                <Text style={{ color: "gray",fontSize:18, marginBottom: 20,justifyContent:"center",alignItems:"center", marginTop:20 }}>or</Text>
+                <View style={styles.fbbutn}>
+                    <Image source={fblogo} style={{marginRight: 10,}} />
+                    <TouchableOpacity  >
+                        <Text style={styles.button}>Sign in with Facebook</Text>
+                    </TouchableOpacity>
+                </View>
+
             </View>
+            <View style={styles.footer}>
+                <Text>By signing in, you accept our<Text style={{color: "blue"}}> Terms and Conditions</Text> </Text>
             </View>
-            <View style={styles.footer}></View>
         </View>
     )
 }
 const styles = StyleSheet.create({
     header: {
-        flex: 0.3,
+        flex: 0.5,
         justifyContent: "flex-end",
         alignItems: "center",
     },
@@ -47,23 +57,40 @@ const styles = StyleSheet.create({
         color: "#181461",
         marginTop: 50,
     },
-    butn:{
+    butn: {
         backgroundColor: "#2A2AC0",
         width: 350,
-        height: 50,
+        height: 60,
         marginTop: 60,
         justifyContent: "center",
         alignItems: "center",
-        borderRadius: 30,
+        borderRadius: 20,
     },
-    button:{
+    button: {
         color: "white",
+        fontWeight: "600",
+        fontSize: 14,
+        letterSpacing: 0.8,
 
     },
     midder: {
         flex: 0.4,
+        justifyContent:"center",
+        alignItems: "center",
     },
-    footer:{
+    footer: {
         flex: 0.1,
+        justifyContent:"center",
+        alignItems: "flex-end",
+        marginTop: 40
+    },
+    fbbutn:{
+        backgroundColor: "#415C95",
+        width: 350,
+        height: 60,
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+        borderRadius: 20,
     }
 })
