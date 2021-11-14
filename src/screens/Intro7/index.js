@@ -14,7 +14,7 @@ function Intro7({ navigation }) {
 
     const onPressContinue = () => {
         if (phoneNumber) {
-            navigation.navigate('intro8')
+            navigation.navigate('intro10')
         }
     }
 

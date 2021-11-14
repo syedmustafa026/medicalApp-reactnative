@@ -7,7 +7,7 @@ import Row from '../../components/row';
 import Butn from '../../components/button';
 import info from "../../../assets/images/info.png"
 import pen from "../../../assets/images/pen.png"
-export default function Intro10() {
+export default function Intro10({navigation}) {
     return (
         <View style={styles.container}>
             <View style={styles.header}>
