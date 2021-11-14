@@ -5,8 +5,7 @@ import userlogo from "../../../assets/images/user.png"
 import SearchBar from '../../components/search';
 import Row from '../../components/row';
 import Butn from '../../components/button';
-import info from "../../../assets/images/info.png"
-import pen from "../../../assets/images/pen.png"
+
 export default function Intro10() {
     return (
         <View style={styles.container}>
@@ -28,14 +27,14 @@ export default function Intro10() {
                     </TouchableOpacity>
                 </View>
             </View>
-
             <View style={styles.rows}>
-                <Row name={["Doctor-Mustafa"]} date={["2/2/22"]} btn={"Modify"}   mark={info} symbol={pen}/>
-                <Row name={["Cardiologist-Johnny"]} date={["4/2/20"]} btn={"Modify"}  mark={info} symbol={pen} />
-                <Row name={["Specialist-Ahmed"]} date={["6/8/25"]} btn={"Modify"}  mark={info} symbol={pen}  />
-                <View style={{ justifyContent: "center", alignItems: "center", }}>
-                    <Butn title={"Book a new Appoinment"} />
-                </View>
+                <Row name={["Dentist - Clara Odding"]} date={["2/2/22"]} btn={"Download"} />
+                <Row name={["Cardiologist-Johnny"]} date={["4/2/20"]} btn={"Download"} />
+                <Row name={["Specialist-Ahmed"]} date={["6/8/25"]} btn={"Download"} />
+                <Row name={["Specialist-Ahmed"]} date={["6/8/25"]} btn={"Download"} />
+                <Row name={["Specialist-Ahmed"]} date={["6/8/25"]} btn={"Download"} />
+                <Row name={["Specialist-Ahmed"]} date={["6/8/25"]} btn={"Download"} />
+        
             </View>
         </View>
 
@@ -73,12 +72,11 @@ const styles = StyleSheet.create({
         borderTopColor: "transparent",
         borderRightColor: "transparent",
         borderLeftColor: "transparent",
-        borderBottomColor: "rgba(159, 159, 159, 0.57)",
+        borderBottomColor: "rgba(159, 159, 159, 0.7)",
 
     },
     btn: {
         fontSize: 16,
         fontWeight: "bold",
-
     },
 })

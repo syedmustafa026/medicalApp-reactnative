@@ -3,30 +3,30 @@ import {
     VStack,
     Input,
     Icon,
-
+    Center,
+    NativeBaseProvider,
 } from 'native-base';
 import { Ionicons, MaterialIcons } from '@expo/vector-icons';
-import { style } from 'dom-helpers';
-export default function SearchBar() {
+const SearchBar = ()=> {
     return (
         <VStack width="100%" space={5} alignItems="center">
             <Input
-                placeholder="    Search"
+                placeholder={"    Search"}
                 bg="#fff"
                 width="100%"
                 borderRadius="4"
                 py="3"
                 px="1"
+                mt="2"
                 fontSize="14"
                 _web={{
-                    _focus: { borderColor: '#181461', style: { boxShadow: 'grey' } },
+                    _focus: { borderColor: '#2A2AC0', style: { boxShadow: 'grey' } },
                 }}
                 InputRightElement={
 
                     <Icon
                         m="2"
                         mr="3"
-                        paddingLeft="10"
                         size="6"
                         color="gray.400"
                         as={<MaterialIcons name="search" />}
@@ -37,12 +37,12 @@ export default function SearchBar() {
     );
 }
 
-// export default function () {
-//   return (
-//     <NativeBaseProvider>
-//       <Center flex={1} px="2">
-//         <SearchBar/>
-//       </Center>
-//     </NativeBaseProvider>
-//   );
-// }
+export default function Searchbarz() {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1} px="2">
+        <SearchBar/>
+      </Center>
+    </NativeBaseProvider>
+  );
+}
