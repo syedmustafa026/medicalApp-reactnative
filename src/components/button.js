@@ -6,7 +6,7 @@ export default function Butn(props) {
 
     return (
         <View style={styles.butn}>
-            <TouchableOpacity  >
+            <TouchableOpacity onPress={props.touch} >
                 <Text style={styles.button}>{props.title}</Text>
             </TouchableOpacity>
         </View>

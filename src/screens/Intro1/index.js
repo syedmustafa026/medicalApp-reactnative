@@ -3,8 +3,8 @@ import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import Logo from "../../../assets/Logo1.png"
 import Doc from "../../../assets/doc.png"
 import dot from "../../../assets/dot1.png"
-import bgimg from "../../../assets/doc34.png"
-export default function Intro1() {
+
+export default function Intro1({navigation}) {
     return (
         <View style={styles.container}>
             <View style={styles.header}>
@@ -13,11 +13,11 @@ export default function Intro1() {
                 <Image source={Doc} style={styles.doc} />
             </View>
             <View style={styles.footer}>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={()=>navigation.navigate("intro4")}>
                     <Text style={styles.btn}>Skip</Text>
                 </TouchableOpacity>
                 <Image source={dot} style={styles.dot} />
-                <TouchableOpacity>
+                <TouchableOpacity onPress={()=>navigation.navigate("intro2")}>
                     <Text style={styles.btn}>Next</Text>
                 </TouchableOpacity>
             </View>

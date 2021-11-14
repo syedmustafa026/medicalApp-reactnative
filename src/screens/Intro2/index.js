@@ -1,10 +1,10 @@
 import React from 'react';
-import { Image, StyleSheet, Text, View,TouchableOpacity } from 'react-native';
+import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import Logo from "../../../assets/Logo1.png"
 import Doc from "../../../assets/doc2.png"
 import dot from "../../../assets/dot2.png"
 
-export default function Intro2() {
+export default function Intro2({ navigation }) {
     return (
         <View style={styles.container}>
             <View style={styles.header}>
@@ -14,21 +14,21 @@ export default function Intro2() {
             </View>
 
             <View style={styles.footer}>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={()=>navigation.navigate("intro4")}>
                     <Text style={styles.btn}>Skip</Text>
                 </TouchableOpacity>
                 <Image source={dot} style={styles.dot} />
-                <TouchableOpacity>
+                <TouchableOpacity onPress={()=>navigation.navigate("intro3")}>
                     <Text style={styles.btn}>Next</Text>
                 </TouchableOpacity>
             </View>
         </View>
-        
+
     );
 }
 
 const styles = StyleSheet.create({
-    header:{
+    header: {
         flex: 0.9,
         justifyContent: "center",
         alignItems: "center"
@@ -52,9 +52,9 @@ const styles = StyleSheet.create({
         marginHorizontal: "auto",
     },
     text: {
-        width:200,
+        width: 200,
         fontSize: 25,
-        textAlign:"center",
+        textAlign: "center",
         fontWeight: "700",
         color: '#181461',
         marginTop: 40,

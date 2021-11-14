@@ -4,7 +4,7 @@ import Logo from "../../../assets/Logo1.png"
 import Doc from "../../../assets/doc3.png"
 import dot from "../../../assets/dot3.png"
 
-export default function Intro3() {
+export default function Intro3({navigation}) {
     return (
         <View style={styles.container}>
             <View style={styles.header}>
@@ -13,11 +13,11 @@ export default function Intro3() {
             <Image source={Doc} style={styles.doc} />
             </View>
             <View style={styles.footer}>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={()=>navigation.navigate("intro3")}>
                     <Text style={styles.btn}>Skip</Text>
                 </TouchableOpacity>
                 <Image source={dot} style={styles.dot} />
-                <TouchableOpacity>
+                <TouchableOpacity onPress={()=>navigation.navigate("intro4")}>
                     <Text style={styles.btn}>Next</Text>
                 </TouchableOpacity>
             </View>
