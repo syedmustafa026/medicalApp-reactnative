@@ -11,10 +11,10 @@ const SearchBar = ()=> {
     return (
         <VStack width="100%" space={5} alignItems="center">
             <Input
-                placeholder={"    Search"}
+                placeholder={" Search"}
                 bg="#fff"
                 width="100%"
-                borderRadius="4"
+                borderRadius="9"
                 py="3"
                 px="1"
                 mt="2"

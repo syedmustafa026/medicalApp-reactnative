@@ -1,29 +1,30 @@
-
 import React from "react"
 import { TouchableOpacity, Text, StyleSheet, Image, View } from "react-native"
-import info from "../../assets/images/info.png"
-import pen from "../../assets/images/pen.png"
 
 export default function Row(props) {
   return (
+
     <View style={styles.container}>
-      <View >
-        <Text style={styles.date}>{props.date}</Text>
-      </View>
-      <View style={styles.rows}>
-        <View style={styles.names}>
-          <Text style={{ fontWeight: "bold", fontSize: 14,color: "black" }}>{props.name} .    
-            <Image style={{ marginLeft: 10 }} source={props.mark} /></Text>
+        <View >
+          <Text style={styles.date}>{props.date}</Text>
         </View>
-        <TouchableOpacity>
-          <View style={styles.btn}>
-            <Text style={{ fontWeight: "bold", fontSize: 14, color: "#2A2AC0", fontStyle: "italic" }}>
-              <Image source={props.symbol} />{props.btn}</Text>
+        <View style={styles.rows}>
+          <View style={styles.names}>
+            <Text style={{ fontWeight: "bold", fontSize: 14, color: "black" }}>{props.name} .
+              <Image style={{ marginLeft: 10 }} source={props.mark} /></Text>
+
           </View>
-        </TouchableOpacity>
-      </View>
+          <TouchableOpacity>
+            <View style={styles.btn}>
+              <Text style={{ fontWeight: "700", fontSize: 14, color: "#2A2AC0" }}>
+                <Image source={props.symbol} /> {props.btn}</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
 
     </View>
+
+
   )
 }
 const styles = StyleSheet.create({

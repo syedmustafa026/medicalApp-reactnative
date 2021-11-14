@@ -8,7 +8,7 @@ import Intro3 from './src/screens/Intro3';
 import Intro4 from './src/screens/Intro4';
 import Intro10 from './src/screens/Intro10';
 import Row from './src/components/row';
-import Intro15 from './src/screens/Intro10';
+import Intro17 from './src/screens/Intro17';
 export default function App() {
   return (
     <View style={styles.container}>
@@ -17,8 +17,8 @@ export default function App() {
       {/* <Intro2 /> */}
       {/* <Intro3 /> */}
       {/* <Intro4 /> */}
-      <Intro10 />
-      {/* <Intro15 /> */}
+      {/* <Intro10 /> */}
+      <Intro15 />
 
       <StatusBar style="auto" />
     </View>

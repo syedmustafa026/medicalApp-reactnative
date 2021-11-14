@@ -24,7 +24,7 @@ export default function Intro10() {
                         <Text style={styles.btn}>Upcoming</Text>
                     </TouchableOpacity>
                     <TouchableOpacity>
-                        <Text style={styles.btn}>Past</Text>
+                        <Text style={styles.btns}>Past</Text>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -76,9 +76,18 @@ const styles = StyleSheet.create({
         borderBottomColor: "rgba(159, 159, 159, 0.57)",
 
     },
+    btns: {
+        fontSize: 16,
+        fontWeight: "bold",
+      
+    },
     btn: {
         fontSize: 16,
         fontWeight: "bold",
-
-    },
+        borderWidth: 4,
+        borderTopColor: "transparent",
+        borderRightColor: "transparent",
+        borderLeftColor: "transparent",
+        borderBottomColor:"#2A2AC0"
+    }
 })
