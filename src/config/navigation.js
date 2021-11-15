@@ -10,12 +10,12 @@ import Intro5 from '../screens/Intro5';
 import Intro6 from '../screens/Intro6';
 import Intro7 from '../screens/Intro7';
 import Intro8 from '../screens/Intro8';
+import Intro9 from '../screens/Intro9';
+import Intro11 from '../screens/Intro11';
 import Intro10 from '../screens/Intro10';
 import Intro17 from '../screens/Intro17';
 import Intro20 from '../screens/Intro20';
-
-
-  const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator();
   
   function AppNavigation() {
     return (
@@ -31,6 +31,8 @@ import Intro20 from '../screens/Intro20';
           <Stack.Screen name="intro6" component={Intro6} />
           <Stack.Screen name="intro7" component={Intro7} />
           <Stack.Screen name="intro8" component={Intro8} />
+          <Stack.Screen name="intro9" component={Intro9} />
+          <Stack.Screen name="intro11" component={Intro11} />
           <Stack.Screen name="intro10" component={Intro10} />
           <Stack.Screen name="intro17" component={Intro17} />
           <Stack.Screen name="intro20" component={Intro20} />

@@ -6,7 +6,6 @@ function Intro5({ navigation }) {
 
     let textInput = useRef(null)
     const [phoneNumber, setPhoneNumber] = useState();
-    const [focusInput, setFocusInput] = useState(true);
     const onChangePhone = (number) => {
         setPhoneNumber(number)
     }
@@ -17,12 +16,6 @@ function Intro5({ navigation }) {
         }
     }
 
-    const onChangeFocus = () => {
-        setFocusInput(true)
-    }
-    const onChangeBlur = () => {
-        setFocusInput(false)
-    }
 
     useEffect(() => {
         textInput.focus()
@@ -64,8 +57,7 @@ function Intro5({ navigation }) {
                             value={phoneNumber}
                             onChangeText={onChangePhone}
                             secureTextEntry={false}
-                            onFocus={onChangeFocus}
-                            onBlur={onChangeBlur}
+                            
                         />
                     </View>
 
@@ -117,7 +109,8 @@ const styles = StyleSheet.create({
     phoneInputStyle: {
         marginLeft: 5,
         height: 50,
-        flex: 1
+        flex: 1,
+        border:"none"
     },
     viewBottom: {
         flex: 1,

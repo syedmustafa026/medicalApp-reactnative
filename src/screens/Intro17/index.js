@@ -5,7 +5,7 @@ import userlogo from "../../../assets/images/user.png"
 import SearchBar from '../../components/search';
 import Row from '../../components/row';
 import Download from "../../../assets/images/download.png"
-export default function Intro17() {
+export default function Intro17({navigation}) {
     return (
         <View style={styles.container}>
             <View style={styles.header}>
@@ -30,15 +30,15 @@ export default function Intro17() {
                 </View>
             </View>
             <View style={styles.rows}>
-                <Row name={["Dentist - Clara Odding"]} date={["2/2/21"]} btn={"Download"}  symbol={Download} />        
-                <Row name={["Dermatologist - Noemi Shinte"]} date={["4/2/21"]} btn={"Download"} symbol={Download} />   
-                <Row name={["Cardiologist - Steven Pauliner"]} date={["5/2/21"]} btn={"Download"} symbol={Download} /> 
-                <Row name={["Ginecologist - Chiara Uber"]} date={["4/8/21"]} btn={"Download"} symbol={Download} />     
-                <Row name={["Orthopedic - Stefano Lanza"]} date={["6/8/21"]} btn={"Download"} symbol={Download} />     
-                <Row name={["Psychiatrist - Giovanna Conte"]} date={["6/8/21"]} btn={"Download"} symbol={Download} />   
-                <Row name={["Dentist - Clara Odding"]} date={["2/2/21"]} btn={"Download"}  symbol={Download} />
-                <Row name={["Dentist - Clara Odding"]} date={["2/2/21"]} btn={"Download"}  symbol={Download} />
-                <Row name={["Psychiatrist - Giovanna Conte"]} date={["6/8/21"]} btn={"Download"} symbol={Download} />
+                <Row name={["Dentist - Clara Odding"]} date={["2/2/21"]} btn={"Download"}  symbol={Download} touch={()=> navigation.navigate("intro20")}/>        
+                <Row name={["Dermatologist - Noemi Shinte"]} date={["4/2/21"]} btn={"Download"} symbol={Download} touch={()=> navigation.navigate("intro20")}/>   
+                <Row name={["Cardiologist - Steven Pauliner"]} date={["5/2/21"]} btn={"Download"} symbol={Download} touch={()=> navigation.navigate("intro20")}/> 
+                <Row name={["Ginecologist - Chiara Uber"]} date={["4/8/21"]} btn={"Download"} symbol={Download} touch={()=> navigation.navigate("intro20")}/>     
+                <Row name={["Orthopedic - Stefano Lanza"]} date={["6/8/21"]} btn={"Download"} symbol={Download} touch={()=> navigation.navigate("intro20")}/>     
+                <Row name={["Psychiatrist - Giovanna Conte"]} date={["6/8/21"]} btn={"Download"} symbol={Download} touch={()=> navigation.navigate("intro20")}/>   
+                <Row name={["Dentist - Clara Odding"]} date={["2/2/21"]} btn={"Download"}  symbol={Download} touch={()=> navigation.navigate("intro20")}/>
+                <Row name={["Dentist - Clara Odding"]} date={["2/2/21"]} btn={"Download"}  symbol={Download} touch={()=> navigation.navigate("intro20")}/>
+                <Row name={["Psychiatrist - Giovanna Conte"]} date={["6/8/21"]} btn={"Download"} symbol={Download} touch={()=> navigation.navigate("intro20")}/>
             </View>
         </View>
 

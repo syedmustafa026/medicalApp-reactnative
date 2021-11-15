@@ -18,7 +18,6 @@ export default function Intro10({navigation}) {
                 <Text style={{ marginTop: 20, fontWeight: "bold", fontSize: 18, marginLeft: 10 }}>My Appoinments</Text>
                
                     <SearchBar placeholder={"Search"} />
-              
                 <View style={styles.heading}>
                     <TouchableOpacity>
                         <Text style={styles.btn}>Upcoming</Text>
@@ -28,13 +27,12 @@ export default function Intro10({navigation}) {
                     </TouchableOpacity>
                 </View>
             </View>
-
             <View style={styles.rows}>
                 <Row name={["Doctor-Mustafa"]} date={["2/2/22"]} btn={"Modify"}   mark={info} symbol={pen}/>
                 <Row name={["Cardiologist-Johnny"]} date={["4/2/20"]} btn={"Modify"}  mark={info} symbol={pen} />
                 <Row name={["Specialist-Ahmed"]} date={["6/8/25"]} btn={"Modify"}  mark={info} symbol={pen}  />
                 <View style={{ justifyContent: "center", alignItems: "center", }}>
-                    <Butn title={"Book a new Appoinment"} />
+                    <Butn touch={()=> navigation.navigate("intro17")} title={"Book a new Appoinment"} />
                 </View>
             </View>
         </View>

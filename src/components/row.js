@@ -14,7 +14,7 @@ export default function Row(props) {
               <Image style={{ marginLeft: 10 }} source={props.mark} /></Text>
 
           </View>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={props.touch}>
             <View style={styles.btn}>
               <Text style={{ fontWeight: "700", fontSize: 14, color: "#2A2AC0" }}>
                 <Image source={props.symbol} /> {props.btn}</Text>
