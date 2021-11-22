@@ -36,10 +36,8 @@ export default function Intro10({navigation}) {
                 </View>
             </View>
         </View>
-
     )
 }
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -54,7 +52,6 @@ const styles = StyleSheet.create({
     },
     search: {
         flex: 0.2,
-
     },
     rows: {
         flex: 0.7,
@@ -77,7 +74,7 @@ const styles = StyleSheet.create({
     btns: {
         fontSize: 16,
         fontWeight: "bold",
-      
+
     },
     btn: {
         fontSize: 16,
