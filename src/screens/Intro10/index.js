@@ -69,7 +69,6 @@ const styles = StyleSheet.create({
         borderRightColor: "transparent",
         borderLeftColor: "transparent",
         borderBottomColor: "rgba(159, 159, 159, 0.57)",
-
     },
     btns: {
         fontSize: 16,
