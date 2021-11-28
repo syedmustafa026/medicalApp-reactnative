@@ -3,7 +3,6 @@ import { TouchableOpacity, Text, StyleSheet, Image, View } from "react-native"
 
 export default function Row(props) {
   return (
-
     <View style={styles.container}>
         <View >
           <Text style={styles.date}>{props.date}</Text>
