@@ -40,5 +40,4 @@ const Stack = createNativeStackNavigator();
       </NavigationContainer>
     );
   }
-  
   export default AppNavigation;
